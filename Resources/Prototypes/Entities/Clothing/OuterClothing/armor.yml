@@ -181,7 +181,7 @@
         Blunt: 0.50  #Ratbite
         Slash: 0.50 #Ratbite
         Piercing: 0.4 #Ratbite
-        Heat: 0.7 #Ratbite
+        Heat: 0.7
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: ModifyDelayedKnockdown # Goobstation
@@ -440,7 +440,7 @@
       coefficients:
         Blunt: 0.3
         Slash: 0.3
-        Piercing: 0.3
+        Piercing: 0.3 #Ratbite
         Heat: 0.3
   - type: GroupExamine
   - type: ModifyDelayedKnockdown # Goobstation
@@ -485,6 +485,8 @@
     slots: WITHOUT_POCKET
   - type: ModifyDelayedKnockdown # Goobstation
     cancel: true
+  - type: StaminaResistance # Goobstation
+    damageCoefficient: 1 #Ratbite
 
 - type: entity
   parent: ClothingOuterArmorHeavy
@@ -636,7 +638,7 @@
         Heat: 0.45
         Caustic: 0.45
   - type: ClothingSpeedModifier
-    walkModifier: 0.7
+    walkModifier: 0.7 #Ratbite
     sprintModifier: 0.65
   - type: HeldSpeedModifier
   - type: ExplosionResistance
@@ -682,6 +684,7 @@
         Piercing: 0.25
   - type: ClothingSpeedModifier
     walkModifier: 0.8
+    sprintModifier: 1.0 #Ratbite
   - type: HeldSpeedModifier
   - type: ExplosionResistance
     damageCoefficient: 0.4
@@ -694,6 +697,8 @@
   - type: ModifyDelayedKnockdown # Goobstation
     delayDelta: 2.5
     knockdownTimeDelta: -2.5
+  - type: StaminaResistance # Goobstation
+    damageCoefficient: 1.0 #Ratbite
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
@@ -733,6 +738,8 @@
   - type: ModifyDelayedKnockdown # Goobstation
     delayDelta: 2.5
     knockdownTimeDelta: -2.5
+  - type: StaminaResistance # Goobstation
+    damageCoefficient: 1.0 #Ratbite
   - type: HideClothingLayerClothing # Goobstation
     hiddenSlots:
     - jumpsuit
